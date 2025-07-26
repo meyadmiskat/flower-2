@@ -1,0 +1,565 @@
+body {
+
+
+    background-color: #F5F8FF;
+
+
+    
+
+
+}
+
+
+
+
+
+main{
+
+
+    max-width: 1440px;
+
+
+    margin: 0 auto;
+
+
+    margin-top: 7rem;
+
+
+  }
+
+
+
+
+
+  
+
+
+.noto-serif {
+
+
+    font-family: "Noto Serif", serif;
+
+
+    font-optical-sizing: auto;
+
+
+    font-weight: bold;
+
+
+    font-style: normal;
+
+
+    font-variation-settings:
+
+
+      "wdth" 100;
+
+
+  }
+
+
+
+
+
+  
+
+
+.inter {
+
+
+    font-family: "Inter", sans-serif;
+
+
+    font-optical-sizing: auto;
+
+
+    font-weight: 400;
+
+
+    font-style: normal;
+
+
+  }
+
+
+
+
+
+
+
+
+.display-flex{
+
+
+    display: flex;
+
+
+}
+
+
+
+
+
+.nav-link{
+
+
+    text-decoration: none;
+
+
+}
+
+
+
+
+
+.nav-item{
+
+
+    list-style: none;
+
+
+    margin-right: 30px;
+
+
+}
+
+
+
+
+
+.navbar{
+
+
+    justify-content: space-between;
+
+
+    align-items: center;
+
+
+  }
+
+
+
+
+
+  .navbar, .banner{
+
+
+    max-width: 1440px;
+
+
+    margin: 0 auto;
+
+
+    
+
+
+  }
+
+
+
+
+
+  .color-01{
+
+
+    color: #000000;
+
+
+  }
+
+
+
+
+
+  .color-02{
+
+
+    color: #8987A1;
+
+
+  }
+
+
+
+
+
+  .color-03{
+
+
+    color: #252432;
+
+
+  }
+
+
+
+
+
+.banner{
+
+
+    align-items: center;
+
+
+    margin-top: 120px;
+
+
+}
+
+
+
+
+
+  .banner-image {
+
+
+    margin-right: 20px;
+
+
+  }
+
+
+
+
+
+  .plants-item {
+
+
+    margin: 0 auto;
+
+
+    text-align: center;
+
+
+  }
+
+
+  
+
+
+  .btn-primary{
+
+
+    background-color: #E95A08;
+
+
+    color: #FFFFFF;
+
+
+    padding: 1.25rem 4.5rem;
+
+
+    font-size: 1rem;
+
+
+    cursor: pointer;
+
+
+    font-weight: bold;
+
+
+    border: none;
+
+
+}
+
+
+
+
+
+.plants-card {
+
+
+
+
+
+    text-align: center;
+
+
+  }
+
+
+
+
+
+  .all-plants {
+
+
+    display: grid;
+
+
+    grid-template-columns: repeat(4, 1fr); /* 4 cards per row */
+
+
+    gap: 20px; /* Adjust space between cards */
+
+
+    max-width: 1440px; /* Optional: keep it centered and neat */
+
+
+    margin: 0 auto;
+
+
+    padding: 20px 0;
+
+
+  }
+
+
+  
+
+
+  .plants-card {
+
+
+    text-align: center;
+
+
+  }
+
+
+  
+
+
+  .plants-card img {
+
+
+    width: 100%;
+
+
+    height: auto;
+
+
+    display: block;
+
+
+  }
+
+
+  
+
+
+  .plant-info {
+
+
+    margin: 10px 0;
+
+
+  }
+
+
+  
+
+
+.flower{
+
+
+    margin-top: 210px;
+
+
+}
+
+
+
+
+
+.flower-text{
+
+
+    margin-left: 60px;
+
+
+   
+
+
+}
+
+
+
+
+
+.flower-text ul li {
+
+
+    margin-bottom: 20px;
+
+
+    font-size: 1.5rem;
+
+
+   
+
+
+  }
+
+
+
+
+
+  .flower-text h1{
+
+
+    font-size: 3.25rem;
+
+
+  }
+
+
+
+
+
+  /* Layout */
+
+
+  .flower-container {
+
+
+    display: flex;
+
+
+    flex-direction: row;
+
+
+    align-items: center;
+
+
+    gap: 30px;
+
+
+    position: relative;
+
+
+    flex-wrap: wrap;
+
+
+}
+
+
+
+
+
+.img-wrapper {
+
+
+    position: relative;
+
+
+    display: inline-block;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+.flower-text {
+
+
+    flex: 1 1 300px;
+
+
+    
+
+
+}
+
+
+
+
+
+  
+
+
+  /* Badge Styling */
+
+
+  .trusted-badge {
+
+
+    position: absolute;
+
+
+    top: -65px;
+
+
+    right: -65px;
+
+
+    width: 200px;
+
+
+    height: 200px;
+
+
+    animation: spin 8s linear infinite;
+
+
+  }
+
+
+  
+
+
+  /* Hide on small screens */
+
+
+  @media (max-width: 768px) {
+
+
+    .trusted-badge {
+
+
+      display: none;
+
+
+    }
+
+
+  
+
+
+    .flower-container {
+
+
+      flex-direction: column;
+
+
+    }
+
+
+  }
+
+
+  
+
+
+  /* Spin Animation */
+
+
+  @keyframes spin {
+
+
+    0%   { transform: rotate(0deg); }
+
+
+    100% { transform: rotate(360deg); }
+
+
+  }
+
+
+  .flower-section{
+
+
+    margin-top: 210px;
+
+
+  }
